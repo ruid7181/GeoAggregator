@@ -1,0 +1,11 @@
+local:
+  data:
+    tabular:
+      dir: Your\path\to\tabular\csv\files
+
+model:
+  save_path: Your\path\to\save\trained\models
+
+figure:
+  materials: Your\path\to\experimental\records
+  dir: Your\path\to\save\figures

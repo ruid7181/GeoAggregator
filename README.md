@@ -11,7 +11,11 @@ The results demonstrate that GeoAggregators achieve the best or second-best perf
 GeoAggregator’s efficiency is underscored by its reduced model size, making it both scalable and lightweight. 
 Moreover, ablation experiments offer insights into the effectiveness of the Gaussian bias and Cartesian attention mechanism, providing recommendations for further optimizing the GeoAggregator’s performance.
 
+#### In the paper, we focus on the spatial regression task...
 ![Research question](figs/figure_1_research_question_camera-ready.png "Workflow of the geospatial regression problem")
+
+#### ... and propose an efficient and light-weight transfrmer model named *GeoAggregator*.
+![Architecture of GeoAggregator model](figs/figure_2_model_architecture_camera-ready.png "GeoAggregator Model Architecture")
 
 ## Dependencies
 Environment requirements are listed in [requirements.txt](https://github.com/ruid7181/GeoAggregator/edit/master/requirements.txt).

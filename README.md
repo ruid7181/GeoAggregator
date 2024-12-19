@@ -1,4 +1,4 @@
-# Implementation of the paper 'GeoAggregator: An Efficient Transformer Model for Geo-spatial Tabular Data'
+# GeoAggregator: An Efficient Transformer Model for Geo-spatial Tabular Data
 
 ## Introduction
 Modeling geospatial tabular data with deep learning has become a promising alternative to traditional statistical and machine learning approaches. 
@@ -11,4 +11,25 @@ The results demonstrate that GeoAggregators achieve the best or second-best perf
 GeoAggregator’s efficiency is underscored by its reduced model size, making it both scalable and lightweight. 
 Moreover, ablation experiments offer insights into the effectiveness of the Gaussian bias and Cartesian attention mechanism, providing recommendations for further optimizing the GeoAggregator’s performance.
 
+![Research question](figs/figure_1_research_question_camera-ready.png "Workflow of the geospatial regression problem")
 
+## Dependencies
+Environment requirements are listed in [requirements.txt](https://github.com/ruid7181/GeoAggregator/edit/master/requirements.txt).
+
+## Datasets
+All 8 synthetic datasets and 3 real-world datasets can be found under the [data](https://github.com/ruid7181/GeoAggregator/edit/master/data) folder.
+
+## Usage
+* To replicate a demo experiment of the **GeoAggregator-mini** model on the Housing dataset, run [application.py](https://github.com/ruid7181/GeoAggregator/edit/master/application.py) by:
+```bash
+python application.py --variant mini --ds housing
+```
+For more options, see:
+```bash
+python application.py --help
+```
+* To replicate the baseline experiments, check [model/baseline_train.py](https://github.com/ruid7181/GeoAggregator/edit/master/model/baseline_train.py).
+* To use the **GeoAggregator** model on your own datasets, first go to [configurations/model_config.py](configurations/model_config.py) to register your dataset with an unique name in both `TabDataColumns` class and `RegisteredDS` class. Then, go to [model/aggregator_ds.py](model/aggregator_ds.py) to add functionality of loading the data and normalizing the coordinates to the `TabDataLoaderWrapper` class. Then it’s ready to go:
+```bash
+python application.py --variant mini --ds YourUniqueDS
+```

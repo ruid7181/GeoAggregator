@@ -17,7 +17,7 @@ Moreover, ablation experiments offer insights into the effectiveness of the Gaus
 Environment requirements are listed in [requirements.txt](https://github.com/ruid7181/GeoAggregator/edit/master/requirements.txt).
 
 ## Datasets
-All 8 synthetic datasets and 3 real-world datasets can be found under the [data](https://github.com/ruid7181/GeoAggregator/edit/master/data) folder.
+All 8 synthetic datasets and 3 real-world datasets can be found under the [data/tabular_datasets](https://github.com/ruid7181/GeoAggregator/edit/master/data/tabular_datasets) folder.
 
 ## Usage
 * To replicate a demo experiment of the **GeoAggregator-mini** model on the Housing dataset, run [application.py](https://github.com/ruid7181/GeoAggregator/edit/master/application.py) by:

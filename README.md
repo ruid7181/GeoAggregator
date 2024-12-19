@@ -24,11 +24,11 @@ All 8 synthetic datasets and 3 real-world datasets can be found under the [data/
 ```bash
 python application.py --variant mini --ds housing
 ```
-For more options, see:
+For more options:
 ```bash
 python application.py --help
 ```
-* To replicate the baseline experiments, check [model/baseline_train.py](https://github.com/ruid7181/GeoAggregator/edit/master/model/baseline_train.py).
+* To replicate the baseline experiments, please check [model/baseline_train.py](https://github.com/ruid7181/GeoAggregator/edit/master/model/baseline_train.py).
 * To use the **GeoAggregator** model on your own datasets, first go to [configurations/model_config.py](configurations/model_config.py) to register your dataset with an unique name in both `TabDataColumns` class and `RegisteredDS` class. Then, go to [model/aggregator_ds.py](model/aggregator_ds.py) to add functionality of loading the data and normalizing the coordinates to the `TabDataLoaderWrapper` class. Then it’s ready to go:
 ```bash
 python application.py --variant mini --ds YourUniqueDS

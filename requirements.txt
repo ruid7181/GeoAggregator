@@ -1,0 +1,14 @@
+geopandas==0.14.4
+libpysal==4.8.1
+matplotlib==3.9.0
+mgwr==2.2.1
+numpy==1.26.4
+opencv_python==4.9.0.80
+optuna==3.6.1
+pandas==2.2.2
+pysal==24.1
+PyYAML==6.0.1
+scikit_learn==1.5.0
+thop==0.1.1.post2209072238
+torch==2.3.0
+xgboost==2.0.3

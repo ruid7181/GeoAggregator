@@ -167,7 +167,7 @@ class TabDataSampler(Dataset):
 
 class TabDataLoaderWrapper:
     def __init__(self,
-                 ds='shp',
+                 ds='housing',
                  shuffle=False,
                  batch_size=8,
                  sample_radius=None,
@@ -188,9 +188,9 @@ class TabDataLoaderWrapper:
         self.tabDS = None
         self.col_repository = TabDataColumns
 
-        if ds == 'shp':
-            atr_cols, spa_cols, y_cols = self.col_repository.shp_atr, self.col_repository.shp_spa, self.col_repository.shp_y
-            self.atr_dims = tuple(range(0, len(self.col_repository.shp_atr)))
+        if ds == 'housing':
+            atr_cols, spa_cols, y_cols = self.col_repository.housing_atr, self.col_repository.housing_spa, self.col_repository.housing_y
+            self.atr_dims = tuple(range(0, len(self.col_repository.housing_atr)))
             self.spa_dims = tuple(
                 range(len(atr_cols), len(atr_cols) + len(spa_cols))
             )

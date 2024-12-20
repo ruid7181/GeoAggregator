@@ -17,11 +17,11 @@ class AggregatorHyperParameters:
 
 
 class TabDataColumns:
-    shp_atr = ['bathrooms', 'sqft_living', 'sqft_lot',
+    housing_atr = ['bathrooms', 'sqft_living', 'sqft_lot',
                'grade', 'condition', 'waterfront',
                'view', 'age']
-    shp_spa = ['UTM_X', 'UTM_Y']   # 26910
-    shp_y = ['y']
+    housing_spa = ['UTM_X', 'UTM_Y']   # 26910
+    housing_y = ['y']
 
     pm25_atr = ['dem_scaled', 'aod_scaled', 't2m_scaled', 'tp_scaled',
                 'dwi_scaled', 'r_scaled', 'wind_scaled']
@@ -41,7 +41,7 @@ class TabDataColumns:
 
 
 class RegisteredDS:
-    tab = ['shp',
+    tab = ['housing',
            'pm25',
            'syn-gwr-r',
            'syn-sl-r',
@@ -151,38 +151,38 @@ class XGBHyperparameters:
     # ==================================================================================================== #
     # Real-world Tab datasets
     # ==================================================================================================== #
-    hp_tab_shp_mae = {'max_depth': 13,
-                      'learning_rate': 0.05163244842640724,
-                      'n_estimators': 933,
-                      'min_child_weight': 10,
-                      'gamma': 0.012785240471988908,
-                      'subsample': 0.6498766880305861,
-                      'colsample_bytree': 0.5690412546972458,
-                      'reg_alpha': 0.6283481513672151,
-                      'reg_lambda': 0.7737194108730473,
-                      'early_stopping_rounds': 31}
-    hp_tab_shp_mse = {'max_depth': 19,
-                      'learning_rate': 0.02297294697039517,
-                      'n_estimators': 960,
-                      'min_child_weight': 10,
-                      'gamma': 0.011019331721181826,
-                      'subsample': 0.37631780470703236,
-                      'colsample_bytree': 0.7798344981482365,
-                      'reg_alpha': 0.17163023082047466,
-                      'reg_lambda': 0.8948321752529722,
-                      'early_stopping_rounds': 74,
-                      'objective': 'reg:squarederror'}
+    hp_tab_housing_mae = {'max_depth': 13,
+                          'learning_rate': 0.05163244842640724,
+                          'n_estimators': 933,
+                          'min_child_weight': 10,
+                          'gamma': 0.012785240471988908,
+                          'subsample': 0.6498766880305861,
+                          'colsample_bytree': 0.5690412546972458,
+                          'reg_alpha': 0.6283481513672151,
+                          'reg_lambda': 0.7737194108730473,
+                          'early_stopping_rounds': 31}
+    hp_tab_housing_mse = {'max_depth': 19,
+                          'learning_rate': 0.02297294697039517,
+                          'n_estimators': 960,
+                          'min_child_weight': 10,
+                          'gamma': 0.011019331721181826,
+                          'subsample': 0.37631780470703236,
+                          'colsample_bytree': 0.7798344981482365,
+                          'reg_alpha': 0.17163023082047466,
+                          'reg_lambda': 0.8948321752529722,
+                          'early_stopping_rounds': 74,
+                          'objective': 'reg:squarederror'}
 
-    hp_tab_shp_no_norm = {'max_depth': 9,
-                           'learning_rate': 0.01573446775363104,
-                           'n_estimators': 615,
-                           'min_child_weight': 4,
-                           'gamma': 0.7676949858809861,
-                           'subsample': 0.5165344718068131,
-                           'colsample_bytree': 0.7745639429133382,
-                           'reg_alpha': 0.5414395855351936,
-                           'reg_lambda': 0.6244831226316103,
-                           'early_stopping_rounds': 41}
+    hp_tab_housing_no_norm = {'max_depth': 9,
+                              'learning_rate': 0.01573446775363104,
+                              'n_estimators': 615,
+                              'min_child_weight': 4,
+                              'gamma': 0.7676949858809861,
+                              'subsample': 0.5165344718068131,
+                              'colsample_bytree': 0.7745639429133382,
+                              'reg_alpha': 0.5414395855351936,
+                              'reg_lambda': 0.6244831226316103,
+                              'early_stopping_rounds': 41}
 
     hp_pm25_mse = {'max_depth': 14,
                    'learning_rate': 0.06665824966294237,

@@ -11,6 +11,8 @@ This paper also introduces a new attention mechanism that uses the Cartesian pro
 ### ... and propose an efficient and light-weight transformer model named *GeoAggregator*.
 ![Architecture of GeoAggregator model](figs/figure_2_model_architecture_camera-ready.png "GeoAggregator Model Architecture")
 
+📚 Preprint of our GeoAggregator paper is available [here](https://arxiv.org/abs/2502.15032).
+
 ## 🪜 Dependencies & Datasets
 * Environment requirements are listed in [requirements.txt](https://github.com/ruid7181/GeoAggregator/edit/master/requirements.txt).
 Set up and activate the Python environment by running following commands:

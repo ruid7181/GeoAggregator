@@ -38,3 +38,8 @@ python application.py --help
 ## 🤖 Use the GeoAggregator
 * We provide a simple [sklearn-style interface](https://github.com/ruid7181/GA-sklearn/tree/main) of the GeoAggregator (GA) model, to apply the model on your own geospatial tabular datasets.
 Further hyperparameter tuning is made possible through this interface.
+
+## License
+
+This software is released under the MIT License. See the [LICENSE](LICENSE) file for details.
+
